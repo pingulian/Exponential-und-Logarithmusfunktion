@@ -29,9 +29,10 @@ rSquared = 1 - np.sum(squaredDiffs) / np.sum(squaredDiffsFromMean)
 print(f"R² (Anpassungsgüte) = {rSquared}") # gibt an, wie gut die angepasste Kurve die Daten darstellt (perfekt: 1, grauenvoll: 0)
 
 # plot the results
-plt.plot(x, y, '.', label="data")
-plt.plot(x, monoExp(x, m, t, b), '--', label="fitted")
-plt.title("Fitted Exponential Curve")
+plt.plot(x, y, '.', label="Originaldaten")
+plt.plot(x, monoExp(x, m, t, b), '--', label="Angepasste Exponentalfunktion")
+plt.title("Angepasste Exponentialfunktion")
+plt.legend()
 
 # inspect the parameters
 print(f"\nf(x) = {m: .6} * e^(-{t: .4} * x) + {b: .4} \n(gerundet)\n")
