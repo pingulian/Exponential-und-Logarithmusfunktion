@@ -83,7 +83,7 @@ def proportional(average, maxxy, minxy, maxabweichungnumb, abweichung, meanmaxxy
         print("(Die Abweichung vom Durchschnitt überschreitet die maximal zugelassene Abweichung)")
 
 def diagramm():
-    ax.set_title('T(t)-Diagramm')
+    ax.set_title('log(T)(t)-Diagramm')
     ax.set_xlabel('Zeit t (in s)')
     ax.set_ylabel('log der Temperatur T (in °C)')        
     ax.plot(x, y, linewidth=2.0)
